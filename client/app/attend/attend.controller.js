@@ -3,6 +3,7 @@
 angular.module('observatory3App')
   .controller('AttendCtrl', function ($scope, $stateParams, $http, Auth, User, $location, notify, focus) {
     $scope.sortorder = '-datetime';
+    $scope.filterMeetingType = False;
 
     var load = function(){
       $http.get('/api/attendance/present/me')
