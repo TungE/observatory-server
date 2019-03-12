@@ -40,9 +40,31 @@
                 <textarea rows="4" name="bio" class="form-control" ng-model="user.bio" mongoose-error></textarea>
               </div>
 
+              <div class="form-group" ng-model-options="{ updateOn: 'default blur', debounce: { 'default': 500, 'blur': 0 } }" ng-class="">
+                <label>Pronoun</label>
+                <br/>
+                <label for="r-he">He</label>
+                <input type="radio" name="pronoun" value="male" id="r-he">
+                <br/>
+                <label for="r-she">She</label>
+                <input type="radio" name="pronoun" value="female" id="r-she">
+                <br/>
+                <label for="r-they">They</label>
+                <input type="radio" name="pronoun" value="they" id="r-they">
+                <br/>
+                <label for="r-ze">Ze</label>
+                <input type="radio" name="pronoun" value="ze" id="r-ze">
+                <br/>
+                <label for="r-other">Other</label>
+                <input type="radio" name="pronoun" value="other" id="r-other">
+                <br/>
+                <label for="r-abstain">Prefer not to say</label>
+                <input type="radio" name="pronoun" value="prefer not to say" id="r-abstain">
+              </div>
+
               <div class="form-group" ng-model-options="{ updateOn: 'default blur', debounce: { 'default': 500, 'blur': 0 } }">
                 <label ng-click="toggleActive()" >Active Developer</label>
-                <input type="checkbox" ng-model="user.active"></input>
+                <input type="checkbox" ng-model="user.active">
               </div>
 
               <button class="btn btn-lg btn-login" ng-class="{'disabled': !profileForm.$valid}" type="submit">
