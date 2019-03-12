@@ -70,10 +70,10 @@
               <div class='text'>
                 <div class='details'>
                   <div class='name'>
-                    {{student.name}}
+                    <a href="https://rcos.io/users/{{student._id}}/profile">{{student.name}}</a>
                   </div>
                   <div class='projects'>
-                    <span ng-repeat='project in student.projects'> {{project.name}} {{$last ? '' : ', '}}</span>
+                    <span ng-repeat='project in student.projects'><a href="https://rcos.io/projects/rcos/{{project.name}}/profile">{{project.name}}</a>{{$last ? '' : ', '}}</span>
                   </div>
                 </div>
                 <!-- TODO, switch to a modal with info -->
@@ -102,10 +102,10 @@
               <div class='text'>
                 <div class='details'>
                   <div class='name'>
-                    {{student.name}}
+                    <a href="https://rcos.io/users/{{student._id}}/profile">{{student.name}}</a>
                   </div>
                   <div class='projects'>
-                    <span ng-repeat='project in student.projects'> {{project.name}} {{$last ? '' : ', '}}</span>
+                    <span ng-repeat='project in student.projects'><a href="https://rcos.io/projects/rcos/{{project.name}}/profile">{{project.name}}</a>{{$last ? '' : ', '}}</span>
                   </div>
                 </div>
                 <!-- TODO, switch to a modal with info -->
