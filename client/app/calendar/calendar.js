@@ -3,9 +3,9 @@
 angular.module('observatory3App')
   .config(function ($stateProvider) {
     $stateProvider
-      .state('smallgroup', {
-        url: '/smallgroup',
-        templateUrl: 'app/smallgroup/smallgroup.html',
-        controller: 'SmallGroupCtrl'
+      .state('calendar', {
+        url: '/calendar',
+        templateUrl: 'app/calendar/calendar.html',
+        controller: 'CalendarCtrl'
       });
   });

@@ -14,6 +14,9 @@
         <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
             <a ng-href="{{item.link}}">{{item.title}}</a>
         </li>
+        <li>
+            <a ng-href="/calendar">Calendar</a>
+        </li>
         <li ng-show="isLoggedIn() && !isMentor() && hasSmallGroup()">
             <a ng-href='/smallgroup'>Small Group</a>
         </li>

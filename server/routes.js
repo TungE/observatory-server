@@ -26,6 +26,7 @@ export default function(app) {
   app.use('/api/teams', require('./api/team'));
   app.use('/api/notifications', require('./api/notification'));
   app.use('/api/user_registrations', require('./api/user_registration'));
+  app.use('/api/calendar', require('./api/calendar'));
 
   app.use('/uploads', express.static(config.imageUploadPath));
 
