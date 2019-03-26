@@ -71,13 +71,9 @@
             <li><a a href="" ng-show='isAdmin() && past' ng-click="markActive(project._id)"> Mark Active</a> </li>
           </ul>
           <div class="clear"></div>
-          <div ng-repeat='tech in project.tech' class='project-tech-boxes' style='display:inline-block;
-            padding:4px;
-            padding-left:6px;
-            padding-right:6px;
-            margin:2px;
-            background-color:#ccc;
-            border-radius:5px;'>{{tech}}</div>
+          <div class='project-tech-boxes'>
+            <div ng-repeat='tech in project.tech'>{{tech}}</div>
+          </div>
           <div id="description" btf-markdown="project.description"></div>
         </div>
       </div>
